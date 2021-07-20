@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GPA 計算器</title>
+	<link rel="stylesheet" type="text/css" href="./css/main_style.css">
+	<link rel="stylesheet" type="text/css" href="./css/button_style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+	<link href="../faviconico.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+	<div id="title_bar"> 
+		<button class="btn" id="save_button">⇩</button>
+		<span class="button_list">
+        <button class="btn" id="save_data">保存我的數據</button>
+        <button class="btn" id="sohw_data">顯示我的數據</button>
+        <button class="btn" id="remove_data">清除我的數據</button>
+		<button class="btn" id="Quick_input">快速輸入</button>
+        </span>
+		<span class="title">成績平均績點 計算器</span> 
+		<span class="lag">🌐 <a href="./xh.html">中</a> / <a href="./index.html">E</a> <br>
+			<div id="old_version">
+			~~版本~	
+				<div>
+					<a style="text-decoration:line-through">alpha_0.1</a> <a style="text-decoration:line-through">alpha_0.2</a> <a style="text-decoration:line-through">alpha_0.3</a> <a style="text-decoration:line-through">alpha_0.4</a> <a style="text-decoration:line-through">alpha_0.5</a>
+					
+					<a href="./">alpha_0.6</a></div>
+			</div>
+		</span>
+	</div>
+	<div id="GPAtable"> 
+		<table align="center" border="0" cellspacing="0" cellpadding="5" >
+			<tr>
+				<th><input type="text"></th>
+				<th><input type="text"></th>
+				<th><input type="text"></th>
+				<th><div id="del_item_button"><img src="./img/trash_close.png" alt="Delete" class="trash_button" style="display:block"><img src="./img/trash_open.png" alt="Delete" class="trash_button" style="display: none;"></div></th>
+			</tr>
+			<tr>
+				<th>課程代碼</th>
+				<th>學分</th>
+				<th>成績</th>
+			</tr>
+		</table>
+		<hr class="add_hr">
+		<div id="add_item_button" align="center"> + </div>
+		<div id="Quick_input_box" style="display: none">
+			<div align="center">快速輸入：<button id="how_to_use_QIN">?</button> </div>
+			<textarea class="Qinclass"></textarea>
+			<br>
+			<button class="btn" id="Qinput">輸入</button>
+		</div>
+		
+	</div>
+	
+	<div id="result"> 
+		嗨， <span id="username">“匿名者”</span> 您的 <br>
+		累積 成績平均績點： <Cumulative_GPA></Cumulative_GPA><br>	
+		總學分： <total_credits></total_credits><br>
+	</div>
+	
+	<div class="warning2">
+		<div> ╳ </div>
+		窄到乜都睇唔到啦 !!!
+	</div>
+	
+	<div class="warning" style="display: none">
+		<div id="warning" style="display: none">警告</div>
+	</div>
+	
+	<p></p>
+	
+<!--	<button id="test">get data</button>-->
+	<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./js/jQuery_cookie_1.4.1/jquery.cookie.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
